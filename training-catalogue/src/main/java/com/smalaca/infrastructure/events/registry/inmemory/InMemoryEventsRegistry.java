@@ -1,4 +1,4 @@
-package com.smalaca.infrastructure.events.inmemory;
+package com.smalaca.infrastructure.events.registry.inmemory;
 
 import com.smalaca.domain.events.registry.EventsRegistry;
 import com.smalaca.domain.trainingoffer.TrainingOfferAccepted;
