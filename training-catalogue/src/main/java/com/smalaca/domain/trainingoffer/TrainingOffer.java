@@ -9,4 +9,8 @@ public class TrainingOffer {
     public TrainingOffer(DateRange dateRange) {
         this.dateRange = dateRange;
     }
+
+    public void resign() {
+
+    }
 }
