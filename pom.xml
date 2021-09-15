@@ -6,8 +6,8 @@
 
     <groupId>com.smalaca</groupId>
     <artifactId>ddd-with-event-storming</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>training-catalogue</module>
