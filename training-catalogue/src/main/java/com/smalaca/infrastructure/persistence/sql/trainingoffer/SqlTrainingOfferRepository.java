@@ -18,4 +18,9 @@ public class SqlTrainingOfferRepository implements TrainingOfferRepository {
     public TrainingOfferId save(TrainingOffer trainingOffer) {
         return null;
     }
+
+    @Override
+    public TrainingOffer findBy(TrainingOfferId trainingOfferId) {
+        return null;
+    }
 }
