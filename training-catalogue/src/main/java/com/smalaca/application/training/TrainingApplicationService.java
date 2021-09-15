@@ -13,7 +13,7 @@ public class TrainingApplicationService {
     private final TrainingRepository trainingRepository;
     private final TrainingOfferRepository trainingOfferRepository;
 
-    public TrainingApplicationService(
+    TrainingApplicationService(
             TrainingRepository trainingRepository, TrainingOfferRepository trainingOfferRepository) {
         this.trainingRepository = trainingRepository;
         this.trainingOfferRepository = trainingOfferRepository;

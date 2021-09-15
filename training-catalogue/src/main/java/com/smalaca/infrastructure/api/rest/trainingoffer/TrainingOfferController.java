@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TrainingOfferController {
     private final TrainingOfferApplicationService trainingOfferApplicationService;
 
-    public TrainingOfferController(TrainingOfferApplicationService trainingOfferApplicationService) {
+    TrainingOfferController(TrainingOfferApplicationService trainingOfferApplicationService) {
         this.trainingOfferApplicationService = trainingOfferApplicationService;
     }
 

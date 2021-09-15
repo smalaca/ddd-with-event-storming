@@ -21,7 +21,7 @@ public class TrainingController {
     private final TrainingOfferQueryRepository trainingOfferQueryRepository;
     private final TrainingApplicationService trainingApplicationService;
 
-    public TrainingController(
+    TrainingController(
             TrainingQueryRepository trainingQueryRepository, TrainingOfferQueryRepository trainingOfferQueryRepository,
             TrainingApplicationService trainingApplicationService) {
         this.trainingQueryRepository = trainingQueryRepository;
