@@ -2,6 +2,7 @@ package com.smalaca.infrastructure.api.rest.training;
 
 import com.smalaca.application.training.TrainingApplicationService;
 import com.smalaca.application.training.TrainingChoiceDto;
+import com.smalaca.domain.training.TrainingCode;
 import com.smalaca.domain.trainingoffer.TrainingOfferId;
 import com.smalaca.query.training.TrainingDetailsDto;
 import com.smalaca.query.training.TrainingDto;
@@ -34,7 +35,7 @@ public class TrainingController {
     }
 
     @GetMapping("/{trainingCode}")
-    public TrainingDetailsDto findBy(@PathVariable String trainingCode) {
+    public TrainingDetailsDto findBy(@PathVariable TrainingCode trainingCode) {
         return trainingQueryRepository.findBy(trainingCode);
     }
 

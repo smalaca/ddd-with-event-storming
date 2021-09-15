@@ -1,5 +1,7 @@
 package com.smalaca.query.training;
 
+import com.smalaca.domain.training.TrainingCode;
+
 import java.util.List;
 
 public class TrainingQueryRepository {
@@ -7,7 +9,7 @@ public class TrainingQueryRepository {
         return null;
     }
 
-    public TrainingDetailsDto findBy(String trainingCode) {
+    public TrainingDetailsDto findBy(TrainingCode trainingCode) {
         return null;
     }
 }
