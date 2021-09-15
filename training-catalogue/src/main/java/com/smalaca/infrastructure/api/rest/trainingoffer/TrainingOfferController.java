@@ -1,6 +1,7 @@
 package com.smalaca.infrastructure.api.rest.trainingoffer;
 
 import com.smalaca.application.trainingoffer.TrainingOfferApplicationService;
+import com.smalaca.domain.trainingoffer.TrainingOfferId;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,13 +15,13 @@ public class TrainingOfferController {
         this.trainingOfferApplicationService = trainingOfferApplicationService;
     }
 
-    @PutMapping("/{trainingOfferNumber}/accept")
-    public void accept(String trainingOfferNumber) {
-        trainingOfferApplicationService.accept(trainingOfferNumber);
+    @PutMapping("/{trainingOfferId}/accept")
+    public void accept(TrainingOfferId trainingOfferId) {
+        trainingOfferApplicationService.accept(trainingOfferId);
     }
 
-    @PutMapping("/{trainingOfferNumber}/resign")
-    public void resign(String trainingOfferNumber) {
-        trainingOfferApplicationService.resign(trainingOfferNumber);
+    @PutMapping("/{trainingOfferId}/resign")
+    public void resign(TrainingOfferId trainingOfferId) {
+        trainingOfferApplicationService.resign(trainingOfferId);
     }
 }

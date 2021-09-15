@@ -1,14 +1,22 @@
 package com.smalaca.application.trainingoffer;
 
+import com.smalaca.domain.trainingoffer.TrainingOfferId;
+import com.smalaca.domain.trainingoffer.TrainingOfferRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TrainingOfferApplicationService {
-    public void accept(String trainingOfferNumber) {
+    private final TrainingOfferRepository trainingOfferRepository;
+
+    TrainingOfferApplicationService(TrainingOfferRepository trainingOfferRepository) {
+        this.trainingOfferRepository = trainingOfferRepository;
+    }
+
+    public void accept(TrainingOfferId trainingOfferId) {
 
     }
 
-    public void resign(String trainingOfferNumber) {
+    public void resign(TrainingOfferId trainingOfferId) {
 
     }
 }
