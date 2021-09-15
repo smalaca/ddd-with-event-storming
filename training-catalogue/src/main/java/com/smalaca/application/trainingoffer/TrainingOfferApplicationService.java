@@ -14,7 +14,11 @@ public class TrainingOfferApplicationService {
     }
 
     public void accept(TrainingOfferId trainingOfferId) {
+        TrainingOffer trainingOffer = trainingOfferRepository.findBy(trainingOfferId);
 
+        trainingOffer.accept();
+
+        trainingOfferRepository.save(trainingOffer);
     }
 
     public void resign(TrainingOfferId trainingOfferId) {

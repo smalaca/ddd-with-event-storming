@@ -27,14 +27,17 @@ public class Training {
     }
 
     private boolean hasNoAvailablePlacesFor(DateRange dateRange) {
+        // logic
         return false;
     }
 
     private boolean isNotPlannedFor(DateRange dateRange) {
+        // logic
         return false;
     }
 
     private boolean trainingProgrammeNotPublished() {
+        // logic
         return false;
     }
 }
